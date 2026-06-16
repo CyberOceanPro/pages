@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B2B大货跨境物流竞争格局深度洞察</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0e0e0e;
+  --ink-mid: #3a3a3a;
+  --ink-light: #6b6b6b;
+  --ink-faint: #a8a8a8;
+  --paper: #f5f2ed;
+  --paper-warm: #ede9e2;
+  --paper-card: #f9f7f4;
+  --rule: #d4cfc7;
+  --accent: #c8401a;
+  --accent-2: #1a5c8a;
+  --accent-3: #2a7a4a;
+  --gold: #b8922a;
+  --col-dashaolin: #c8401a;
+  --col-lianyu: #1a5c8a;
+  --col-jiufang: #2a7a4a;
+  --col-meitong: #7a3a8a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', 'Noto Serif SC', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── COVER ── */
+.cover {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.cover-noise {
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.03) 39px, rgba(255,255,255,0.03) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px);
+  pointer-events: none;
+}
+
+.cover-accent-bar {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--gold) 50%, var(--accent-2) 100%);
+}
+
+.cover-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px 60px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  display: flex; align-items: center; gap: 14px;
+}
+.cover-eyebrow::before {
+  content: '';
+  display: block; width: 32px; height: 1px;
+  background: var(--accent);
+}
+
+.cover-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 700;
+  color: #f5f2ed;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.cover-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(245,242,237,0.55);
+  margin-bottom: 60px;
+}
+
+.cover-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cover-meta-item {
+  padding: 0 32px 0 0;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.cover-meta-item:first-child { padding-left: 0; }
+.cover-meta-item:last-child { border-right: none; }
+
+.meta-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: rgba(245,242,237,0.35);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.meta-value {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  color: rgba(245,242,237,0.8);
+  font-weight: 300;
+}
+
+.competitor-pills {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.cpill {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  padding: 5px 12px;
+  border: 1px solid;
+  letter-spacing: 0.06em;
+}
+.cpill-1 { color: #ff7a5a; border-color: rgba(255,122,90,0.4); }
+.cpill-2 { color: #7ab8e8; border-color: rgba(122,184,232,0.4); }
+.cpill-3 { color: #7aca9a; border-color: rgba(122,202,154,0.4); }
+.cpill-4 { color: #c49ade; border-color: rgba(196,154,222,0.4); }
+
+.cover-footer {
+  padding: 24px 80px 24px 100px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; justify-content: space-between; align-items: center;
+  position: relative; z-index: 1;
+}
+.cover-footer-text {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: rgba(245,242,237,0.25);
+  letter-spacing: 0.08em;
+}
+
+/* ── LAYOUT ── */
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 80px 48px;
+}
+
+/* ── CHAPTER HEADERS ── */
+.ch {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 0 24px;
+  margin-bottom: 52px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+.ch-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  padding-top: 6px;
+  text-align: right;
+}
+.ch-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.ch-sub {
+  font-size: 14px;
+  color: var(--ink-light);
+  font-weight: 300;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ── SECTION TITLES ── */
+.sh {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 48px 0 20px;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  line-height: 1.4;
+}
+.sh-sm {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ink-light);
+  text-transform: uppercase;
+  margin: 36px 0 16px;
+}
+
+p {
+  color: var(--ink-mid);
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* ── PORTER 5 FORCES ── */
+.forces-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin: 24px 0;
+}
+.force-card {
+  background: var(--paper-card);
+  padding: 28px 30px;
+  position: relative;
+}
+.force-card.full { grid-column: 1 / -1; }
+.force-intensity {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.int-high { color: var(--accent); border: 1px solid var(--accent); background: rgba(200,64,26,0.06); }
+.int-med { color: var(--gold); border: 1px solid var(--gold); background: rgba(184,146,42,0.06); }
+.int-medhigh { color: #b05820; border: 1px solid #b05820; background: rgba(176,88,32,0.06); }
+.force-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.force-body {
+  font-size: 14px;
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.7;
+}
+.force-body ul { padding-left: 18px; }
+.force-body li { margin-bottom: 6px; }
+
+/* ── COMPETITOR PROFILES ── */
+.comp-section {
+  margin: 60px 0;
+}
+.comp-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.comp-color-bar {
+  width: 4px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.comp-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.comp-tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink-light);
+  margin-top: 4px;
+}
+.comp-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.fact-table {
+  background: var(--paper-warm);
+  padding: 20px 24px;
+}
+.fact-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.fact-row:last-child { border-bottom: none; }
+.fact-key {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.fact-val {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 400;
+  text-align: right;
+  font-family: 'Noto Serif SC', serif;
+}
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.strength-item {
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.strength-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+  letter-spacing: 0.06em;
+}
+.strength-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.strength-desc {
+  font-size: 13px;
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.6;
+}
+.strength-accent {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  opacity: 0.6;
+}
+
+.weakness-box {
+  background: rgba(200,64,26,0.04);
+  border: 1px solid rgba(200,64,26,0.15);
+  padding: 18px 22px;
+  margin-top: 16px;
+}
+.weakness-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.weakness-list {
+  list-style: none;
+  padding: 0;
+}
+.weakness-list li {
+  font-size: 13px;
+  color: var(--ink-mid);
+  font-weight: 300;
+  padding: 5px 0 5px 18px;
+  position: relative;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.weakness-list li::before {
+  content: '–';
+  position: absolute; left: 0;
+  color: var(--accent);
+}
+
+/* ── COMPARISON TABLES ── */
+.comp-table-wrap {
+  overflow-x: auto;
+  margin: 24px 0;
+}
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.comp-table th {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  text-align: left;
+  background: var(--ink);
+  color: rgba(245,242,237,0.7);
+  font-weight: 400;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.comp-table th:first-child { color: rgba(245,242,237,0.4); }
+.comp-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  color: var(--ink-mid);
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.comp-table tr:last-child td { border-bottom: none; }
+.comp-table td:first-child {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  background: var(--paper-warm);
+  font-weight: 400;
+}
+.comp-table tr:nth-child(even) td { background: var(--paper-card); }
+.comp-table tr:nth-child(even) td:first-child { background: var(--paper-warm); }
+.best { font-weight: 500; color: var(--ink); }
+.star { color: var(--accent); font-size: 12px; }
+
+/* ── RADAR CHART ── */
+.radar-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin: 32px 0;
+}
+.radar-canvas-wrap {
+  position: relative;
+}
+canvas#radar {
+  width: 100%;
+  height: auto;
+}
+.radar-legend {
+  padding-top: 16px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.legend-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.legend-desc {
+  font-size: 12px;
+  color: var(--ink-light);
+  font-weight: 300;
+  margin-top: 2px;
+}
+.score-bar {
+  margin-top: 6px;
+  height: 3px;
+  background: var(--rule);
+  position: relative;
+}
+.score-fill {
+  position: absolute;
+  left: 0; top: 0; height: 100%;
+}
+
+/* ── MOAT CARDS ── */
+.moat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin: 24px 0;
+}
+.moat-card {
+  background: var(--paper-card);
+  padding: 28px 30px;
+}
+.moat-company {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.moat-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.moat-level {
+  margin-bottom: 10px;
+}
+.moat-level-label {
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin-bottom: 5px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.08em;
+}
+.moat-level-text {
+  font-size: 13px;
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.6;
+  padding-left: 12px;
+  border-left: 2px solid var(--rule);
+}
+.moat-rating {
+  margin-top: 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+/* ── 4D MODEL ── */
+.fourd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin: 24px 0;
+}
+.fourd-card {
+  background: var(--paper-card);
+  padding: 28px 24px;
+  text-align: center;
+}
+.fourd-letter {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.fourd-en {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.fourd-cn {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.fourd-desc {
+  font-size: 12px;
+  color: var(--ink-light);
+  font-weight: 300;
+  line-height: 1.6;
+}
+.fourd-metric {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+
+/* ── STRATEGY DIRECTIONS ── */
+.strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+.strategy-card {
+  border: 1px solid var(--rule);
+  padding: 24px 26px;
+  position: relative;
+  overflow: hidden;
+}
+.strategy-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  margin-bottom: 12px;
+}
+.strategy-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.strategy-desc {
+  font-size: 13px;
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.7;
+}
+.strategy-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+}
+.s1::after { background: var(--col-dashaolin); }
+.s2::after { background: var(--col-jiufang); }
+.s3::after { background: var(--col-meitong); }
+.s4::after { background: var(--col-lianyu); }
+
+/* ── MOAT LADDER ── */
+.ladder {
+  margin: 24px 0;
+}
+.ladder-row {
+  display: grid;
+  grid-template-columns: 80px 140px 1fr 100px;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--rule);
+  align-items: center;
+}
+.ladder-row:last-child { border-bottom: none; }
+.ladder-tier {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+.ladder-type {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  font-family: 'Noto Serif SC', serif;
+}
+.ladder-desc {
+  font-size: 13px;
+  color: var(--ink-mid);
+  font-weight: 300;
+}
+.ladder-period {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--ink-faint);
+  text-align: right;
+  letter-spacing: 0.06em;
+}
+.ladder-bar-wrap {
+  height: 2px;
+  background: var(--rule);
+  margin-top: 4px;
+}
+
+/* ── DISCLAIMER ── */
+.disclaimer {
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  padding: 20px 24px;
+  margin: 40px 0;
+  font-size: 12px;
+  color: var(--ink-faint);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 60px 0;
+}
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 3px solid var(--gold);
+  padding: 4px 0 4px 24px;
+  margin: 32px 0;
+}
+.pull-quote p {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* ── SCORE BADGE ── */
+.score-badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+}
+
+/* animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.cover-body > * {
+  animation: fadeUp 0.7s ease both;
+}
+.cover-eyebrow { animation-delay: 0.1s; }
+.cover-title   { animation-delay: 0.25s; }
+.cover-subtitle{ animation-delay: 0.35s; }
+.cover-meta    { animation-delay: 0.5s; }
+.competitor-pills { animation-delay: 0.6s; }
+
+/* print/export friendly section break */
+.page-break { page-break-before: always; }
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ COVER ══════════════════ -->
+<div class="cover">
+  <div class="cover-noise"></div>
+  <div class="cover-accent-bar"></div>
+
+  <div class="cover-body">
+    <div class="cover-eyebrow">竞争格局深度洞察 · 2026年6月</div>
+    <h1 class="cover-title">B2B大货<br>跨境物流<br>竞争格局分析</h1>
+    <p class="cover-subtitle">基于华为"五看三定"方法论 · 看竞争维度</p>
+
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <div class="meta-label">分析框架</div>
+        <div class="meta-value">华为五看三定<br>看竞争维度</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="meta-label">赛道定义</div>
+        <div class="meta-value">FBA头程<br>海运拼箱/整柜</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="meta-label">核心竞对</div>
+        <div class="meta-value">四家头部<br>认证物流商</div>
+      </div>
+      <div class="cover-meta-item">
+        <div class="meta-label">时间窗口</div>
+        <div class="meta-value">2025–2026年<br>公开数据</div>
+      </div>
+    </div>
+
+    <div class="competitor-pills">
+      <span class="cpill cpill-1">大森林全球物流</span>
+      <span class="cpill cpill-2">联宇物流</span>
+      <span class="cpill cpill-3">九方通逊</span>
+      <span class="cpill cpill-4">美通供应链</span>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <span class="cover-footer-text">B2B CROSS-BORDER LOGISTICS · COMPETITIVE INTELLIGENCE REPORT</span>
+    <span class="cover-footer-text">CONFIDENTIAL · INTERNAL USE ONLY</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 第一章：框架 ══════════════════ -->
+<div class="page">
+  <div class="ch">
+    <div class="ch-num">01</div>
+    <div>
+      <div class="ch-title">分析框架与方法论</div>
+      <div class="ch-sub">华为"五看三定"看竞争维度 · 四层分析结构</div>
+    </div>
+  </div>
+
+  <p>华为"五看三定"战略模型中的"看竞争"，核心回答三个问题：<strong>谁是我们的竞争对手？对手的优势与劣势是什么？我们如何打赢对手？</strong>其目标不是简单罗列竞对信息，而是通过结构化分析，找到差异化破局空间。</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:32px 0">
+    <div style="background:var(--paper-card);padding:24px 20px">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">01 / 竞争环境</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px">波特五力扫描</div>
+      <div style="font-size:12px;color:var(--ink-light);font-weight:300;line-height:1.6">识别行业竞争强度，输出格局画像</div>
+    </div>
+    <div style="background:var(--paper-card);padding:24px 20px">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">02 / 竞对全景</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px">竞争档案建立</div>
+      <div style="font-size:12px;color:var(--ink-light);font-weight:300;line-height:1.6">战略·产品·技术·价格·渠道·服务</div>
+    </div>
+    <div style="background:var(--paper-card);padding:24px 20px">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">03 / 对标分析</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px">雷达图打分</div>
+      <div style="font-size:12px;color:var(--ink-light);font-weight:300;line-height:1.6">七维度竞争力量化对比</div>
+    </div>
+    <div style="background:var(--paper-card);padding:24px 20px">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">04 / 策略推演</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px">破局空间识别</div>
+      <div style="font-size:12px;color:var(--ink-light);font-weight:300;line-height:1.6">战略控制点与差异化方向</div>
+    </div>
+  </div>
+
+  <div class="sh-sm">竞对选取逻辑 — 四种竞争路径</div>
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead><tr>
+        <th>竞对</th><th>核心路径</th><th>选取理由</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>大森林</td><td class="best">规模效应型</td><td>FBA海运拼箱市占率第一，全链路基建最深</td></tr>
+        <tr><td>联宇</td><td class="best">重资产强控型</td><td>专注跨境大货，时效分级产品行业领先</td></tr>
+        <tr><td>九方通逊</td><td class="best">技术驱动型</td><td>数字化能力最强，FIST Elite最高等级认证</td></tr>
+        <tr><td>美通</td><td class="best">渠道覆盖型</td><td>海陆空铁渠道最广，多平台合作最全</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 第二章：波特五力 ══════════════════ -->
+<div style="background:var(--paper-warm)">
+<div class="page">
+  <div class="ch">
+    <div class="ch-num">02</div>
+    <div>
+      <div class="ch-title">行业竞争环境扫描</div>
+      <div class="ch-sub">波特五力模型 · B2B大货跨境物流赛道</div>
+    </div>
+  </div>
+
+  <div class="forces-grid">
+    <div class="force-card full">
+      <span class="force-intensity int-high">高强度</span>
+      <div class="force-title">现有竞争者之间的竞争</div>
+      <div class="force-body">
+        B2B大货跨境物流赛道已从10亿级跃升至30亿级，头部企业加速扩张，竞争白热化。FBA头程服务高度趋同，价格战频发，利润率持续收窄。亚马逊SPN/SEND/ShipTrack等认证成为"标配"，未获认证的中小货代加速出清。头部物流商复购率（如大森林90%）成为核心KPI，美线海运签收时效需控制在35天以内，准时率要求95%以上，倒逼全链路效率提升。
+      </div>
+    </div>
+    <div class="force-card">
+      <span class="force-intensity int-medhigh">中等偏高</span>
+      <div class="force-title">潜在进入者威胁</div>
+      <div class="force-body">
+        <ul>
+          <li>传统货代正加速向跨境电商物流转型</li>
+          <li>亚马逊SEND等官方物流持续压缩第三方空间</li>
+          <li>谷仓、万邑通等海外仓巨头可能前向延伸</li>
+          <li><strong>但进入壁垒升高：</strong>海外仓+清关+API对接+认证四项缺一不可</li>
+        </ul>
+      </div>
+    </div>
+    <div class="force-card">
+      <span class="force-intensity int-med">中等</span>
+      <div class="force-title">替代品威胁</div>
+      <div class="force-body">
+        <ul>
+          <li>亚马逊官方物流SEND/ShipTrack直接竞争</li>
+          <li>Temu、SHEIN官方物流体系绕过传统头程</li>
+          <li>海外仓直发模式替代FBA入仓</li>
+          <li><strong>结论：</strong>替代品威胁存在但有限，FBA头程仍是刚需</li>
+        </ul>
+      </div>
+    </div>
+    <div class="force-card">
+      <span class="force-intensity int-high">高</span>
+      <div class="force-title">供应商（船司/航司）议价能力</div>
+      <div class="force-body">
+        COSCO、马士基、MSC等头部船司集中度高，运价波动对物流商利润影响巨大。旺季舱位分配成为稀缺资源，与船司的包量协议和长期合作深度决定旺季履约能力。
+      </div>
+    </div>
+    <div class="force-card">
+      <span class="force-intensity int-medhigh">中等偏高</span>
+      <div class="force-title">购买者（卖家/工厂）议价能力</div>
+      <div class="force-body">
+        卖家倾向"多家比价"，切换成本相对较低。但中大卖家对时效确定性、系统对接能力要求更高，建立稳定合作后切换意愿上升。<strong>2026年亚马逊取消预处理服务后，目的国本土化能力成为关键权重。</strong>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════════════ 第三章：竞对档案 ══════════════════ -->
+<div class="page">
+  <div class="ch">
+    <div class="ch-num">03</div>
+    <div>
+      <div class="ch-title">核心竞对全景档案</div>
+      <div class="ch-sub">战略定位 · 核心能力 · 优势短板全面解析</div>
+    </div>
+  </div>
+
+  <!-- 大森林 -->
+  <div class="comp-section">
+    <div class="comp-header">
+      <div class="comp-color-bar" style="background:var(--col-dashaolin)"></div>
+      <div>
+        <div class="comp-name">大森林全球物流</div>
+        <div class="comp-tagline">FBA海运拼箱之王 · 规模效应型竞对</div>
+        <div class="comp-badge" style="color:var(--col-dashaolin);border:1px solid rgba(200,64,26,0.3);background:rgba(200,64,26,0.05)">CIC灼识认证 · FBA海运拼箱市占率第一</div>
+      </div>
+    </div>
+
+    <div class="comp-grid">
+      <div class="fact-table">
+        <div class="fact-row"><span class="fact-key">成立</span><span class="fact-val">2010年</span></div>
+        <div class="fact-row"><span class="fact-key">总部</span><span class="fact-val">深圳</span></div>
+        <div class="fact-row"><span class="fact-key">注册资本</span><span class="fact-val">1000万人民币</span></div>
+        <div class="fact-row"><span class="fact-key">服务客户</span><span class="fact-val">超 20,000 家</span></div>
+        <div class="fact-row"><span class="fact-key">复购率</span><span class="fact-val" style="color:var(--col-dashaolin);font-weight:600">90%</span></div>
+        <div class="fact-row"><span class="fact-key">资质</span><span class="fact-val">AAAA级物流企业</span></div>
+        <div class="fact-row"><span class="fact-key">平台认证</span><span class="fact-val">SPN / SEND / ShipTrack / FIST</span></div>
+      </div>
+      <div>
+        <div class="sh-sm">六大核心竞争优势</div>
+        <div class="strengths-grid">
+          <div class="strength-item">
+            <div class="strength-num">01</div>
+            <div class="strength-title">FBA拼箱绝对领先</div>
+            <div class="strength-desc">CIC认证市占率第一，规模效应带来成本优势，拼箱网络密度难以复制</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">02</div>
+            <div class="strength-title">到港48小时拆柜</div>
+            <div class="strength-desc">COSCO/EMC直航+自营卡车队，旺季履约率98%</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">03</div>
+            <div class="strength-title">低于市场5-10%</div>
+            <div class="strength-desc">亚马逊协议价透明无附加费，免收国内仓中转费</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">04</div>
+            <div class="strength-title">超大件8吨/8米</div>
+            <div class="strength-desc">精准匹配B2B大货需求，行业上限领先</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">05</div>
+            <div class="strength-title">查验率 &lt;1%</div>
+            <div class="strength-desc">合规部门2017年首创，行业合规先行者</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">06</div>
+            <div class="strength-title">难约仓批约85%</div>
+            <div class="strength-desc">美东难约仓库高通过率，B2B大货独特优势</div>
+            <div class="strength-accent" style="background:var(--col-dashaolin)"></div>
+          </div>
+        </div>
+        <div class="weakness-box">
+          <div class="weakness-label">潜在短板</div>
+          <ul class="weakness-list">
+            <li>"中等定价"在极致价格战场景下可能失守</li>
+            <li>规模持续扩张对管理效率和系统承载提出更高要求</li>
+            <li>技术创新投入公开信息不足，数字化标签不够鲜明</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 联宇 -->
+  <div class="comp-section">
+    <div class="comp-header">
+      <div class="comp-color-bar" style="background:var(--col-lianyu)"></div>
+      <div>
+        <div class="comp-name">联宇物流</div>
+        <div class="comp-tagline">跨境大货专家 · 重资产强控型竞对</div>
+        <div class="comp-badge" style="color:var(--col-lianyu);border:1px solid rgba(26,92,138,0.3);background:rgba(26,92,138,0.05)">亚马逊首家"4S"全系认证服务商</div>
+      </div>
+    </div>
+
+    <div class="comp-grid">
+      <div class="fact-table">
+        <div class="fact-row"><span class="fact-key">成立</span><span class="fact-val">2010年</span></div>
+        <div class="fact-row"><span class="fact-key">总部</span><span class="fact-val">东莞</span></div>
+        <div class="fact-row"><span class="fact-key">注册资本</span><span class="fact-val">2000万人民币</span></div>
+        <div class="fact-row"><span class="fact-key">荣誉</span><span class="fact-val">专精特新 · 高新技术企业</span></div>
+        <div class="fact-row"><span class="fact-key">数字化</span><span class="fact-val" style="color:var(--col-lianyu);font-weight:600">两化融合 AA级</span></div>
+        <div class="fact-row"><span class="fact-key">海外仓</span><span class="fact-val">7+仓 · 洛杉矶60万sqft</span></div>
+        <div class="fact-row"><span class="fact-key">平台认证</span><span class="fact-val">SPN+SEND+ShipTrack+TSPN</span></div>
+      </div>
+      <div>
+        <div class="sh-sm">时效分级产品矩阵 · 核心差异化</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:16px">
+          <div style="background:var(--paper-card);padding:18px;text-align:center">
+            <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px">普船</div>
+            <div style="font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--ink)">25–35</div>
+            <div style="font-size:11px;color:var(--ink-faint)">天 · 成本导向</div>
+          </div>
+          <div style="background:var(--paper-card);padding:18px;text-align:center;border-left:1px solid var(--rule)">
+            <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--col-lianyu);text-transform:uppercase;margin-bottom:8px">快船</div>
+            <div style="font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--col-lianyu)">18–22</div>
+            <div style="font-size:11px;color:var(--ink-faint)">天 · 平衡型</div>
+          </div>
+          <div style="background:var(--paper-card);padding:18px;text-align:center;border-left:1px solid var(--rule)">
+            <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;margin-bottom:8px">特快"ONLY18"</div>
+            <div style="font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--accent)">12–15</div>
+            <div style="font-size:11px;color:var(--ink-faint)">天 · 效率导向</div>
+          </div>
+        </div>
+        <div class="strengths-grid">
+          <div class="strength-item">
+            <div class="strength-num">01</div>
+            <div class="strength-title">大货专业壁垒</div>
+            <div class="strength-desc">健身器材、工业设备、家具等大件重货品类深厚经验</div>
+            <div class="strength-accent" style="background:var(--col-lianyu)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">02</div>
+            <div class="strength-title">重资产强控</div>
+            <div class="strength-desc">自有车队+自动化分拣+60万sqft海外仓，关键节点强控</div>
+            <div class="strength-accent" style="background:var(--col-lianyu)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">03</div>
+            <div class="strength-title">合规资质最全</div>
+            <div class="strength-desc">信息安全+两化融合+专精特新+高新企业多维度认证</div>
+            <div class="strength-accent" style="background:var(--col-lianyu)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">04</div>
+            <div class="strength-title">"4S"认证护城河</div>
+            <div class="strength-desc">行业首家集齐SPN+SEND+ShipTrack+TSPN四项认证</div>
+            <div class="strength-accent" style="background:var(--col-lianyu)"></div>
+          </div>
+        </div>
+        <div class="weakness-box" style="border-color:rgba(26,92,138,0.2);background:rgba(26,92,138,0.03)">
+          <div class="weakness-label" style="color:var(--col-lianyu)">潜在短板</div>
+          <ul class="weakness-list">
+            <li>重资产模式资金占用大，扩张节奏受限</li>
+            <li>总部东莞，深圳核心市场品牌声量不及本土企业</li>
+            <li>大货标签鲜明，轻小件市场认知度相对较弱</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 九方通逊 -->
+  <div class="comp-section">
+    <div class="comp-header">
+      <div class="comp-color-bar" style="background:var(--col-jiufang)"></div>
+      <div>
+        <div class="comp-name">九方通逊</div>
+        <div class="comp-tagline">时效稳定标杆 · 数字化驱动型竞对</div>
+        <div class="comp-badge" style="color:var(--col-jiufang);border:1px solid rgba(42,122,74,0.3);background:rgba(42,122,74,0.05)">2026年5月 · 亚马逊FIST Elite承运商（最高等级）</div>
+      </div>
+    </div>
+
+    <div class="comp-grid">
+      <div class="fact-table">
+        <div class="fact-row"><span class="fact-key">成立</span><span class="fact-val">2015年</span></div>
+        <div class="fact-row"><span class="fact-key">总部</span><span class="fact-val">深圳</span></div>
+        <div class="fact-row"><span class="fact-key">员工</span><span class="fact-val">超 1,500 人</span></div>
+        <div class="fact-row"><span class="fact-key">服务客户</span><span class="fact-val">超 32,000 名卖家</span></div>
+        <div class="fact-row"><span class="fact-key">专利数</span><span class="fact-val" style="color:var(--col-jiufang);font-weight:600">42 项</span></div>
+        <div class="fact-row"><span class="fact-key">研发团队</span><span class="fact-val">40+ 人</span></div>
+        <div class="fact-row"><span class="fact-key">仓储面积</span><span class="fact-val">55万+ ㎡</span></div>
+      </div>
+      <div>
+        <div class="sh-sm">技术护城河深度 — 四家竞对之首</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">
+          <div style="background:rgba(42,122,74,0.08);border:1px solid rgba(42,122,74,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--col-jiufang)">42</div>
+            <div style="font-size:11px;color:var(--ink-light);margin-top:4px">专利数量</div>
+          </div>
+          <div style="background:rgba(42,122,74,0.08);border:1px solid rgba(42,122,74,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--col-jiufang)">40+</div>
+            <div style="font-size:11px;color:var(--ink-light);margin-top:4px">研发团队规模</div>
+          </div>
+          <div style="background:rgba(42,122,74,0.08);border:1px solid rgba(42,122,74,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--col-jiufang)">90%+</div>
+            <div style="font-size:11px;color:var(--ink-light);margin-top:4px">全年时效达标率</div>
+          </div>
+        </div>
+        <div class="strengths-grid">
+          <div class="strength-item">
+            <div class="strength-num">01</div>
+            <div class="strength-title">FIST Elite最高认证</div>
+            <div class="strength-desc">2026年5月升级，亚马逊体系内绩效认可天花板</div>
+            <div class="strength-accent" style="background:var(--col-jiufang)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">02</div>
+            <div class="strength-title">数字化能力第一</div>
+            <div class="strength-desc">42项专利+40+研发团队+全链条API对接，技术护城河最深</div>
+            <div class="strength-accent" style="background:var(--col-jiufang)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">03</div>
+            <div class="strength-title">300+清关团队</div>
+            <div class="strength-desc">欧美本土团队，医疗器械/美妆/电池合规专长，响应&lt;2h</div>
+            <div class="strength-accent" style="background:var(--col-jiufang)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">04</div>
+            <div class="strength-title">"先查后装"试点</div>
+            <div class="strength-desc">深圳仅两家获批单位之一，合规效率先发优势</div>
+            <div class="strength-accent" style="background:var(--col-jiufang)"></div>
+          </div>
+        </div>
+        <div class="weakness-box" style="border-color:rgba(42,122,74,0.2);background:rgba(42,122,74,0.03)">
+          <div class="weakness-label" style="color:var(--col-jiufang)">潜在短板</div>
+          <ul class="weakness-list">
+            <li>成立2015年，品牌历史比大森林、联宇短5年</li>
+            <li>专注FBA专线，传统货代和大宗物流能力布局有限</li>
+            <li>1500+人规模，人效管理和运营效率面临持续优化压力</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 美通 -->
+  <div class="comp-section">
+    <div class="comp-header">
+      <div class="comp-color-bar" style="background:var(--col-meitong)"></div>
+      <div>
+        <div class="comp-name">美通供应链（AAF）</div>
+        <div class="comp-tagline">渠道广度之王 · 多式联运专家</div>
+        <div class="comp-badge" style="color:var(--col-meitong);border:1px solid rgba(122,58,138,0.3);background:rgba(122,58,138,0.05)">2020–2025连续五届 FBA物流十强企业</div>
+      </div>
+    </div>
+
+    <div class="comp-grid">
+      <div class="fact-table">
+        <div class="fact-row"><span class="fact-key">始于</span><span class="fact-val">2008年</span></div>
+        <div class="fact-row"><span class="fact-key">总部</span><span class="fact-val">深圳坂田</span></div>
+        <div class="fact-row"><span class="fact-key">全球员工</span><span class="fact-val">超 1,000 人</span></div>
+        <div class="fact-row"><span class="fact-key">国内分公司</span><span class="fact-val" style="color:var(--col-meitong);font-weight:600">30 家</span></div>
+        <div class="fact-row"><span class="fact-key">海外分公司</span><span class="fact-val" style="color:var(--col-meitong);font-weight:600">20 家</span></div>
+        <div class="fact-row"><span class="fact-key">自营线路</span><span class="fact-val">80+ 条</span></div>
+        <div class="fact-row"><span class="fact-key">平台认证</span><span class="fact-val">SPN+ShipTrack+TSPN+SEND+FIST+Temu+美客多</span></div>
+      </div>
+      <div>
+        <div class="sh-sm">运输方式覆盖 — 四种模式全覆盖</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px">
+          <div style="background:rgba(122,58,138,0.08);border:1px solid rgba(122,58,138,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--col-meitong)">海</div>
+            <div style="font-size:10px;color:var(--ink-light);margin-top:6px">美欧加海派专线</div>
+          </div>
+          <div style="background:rgba(122,58,138,0.08);border:1px solid rgba(122,58,138,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--col-meitong)">空</div>
+            <div style="font-size:10px;color:var(--ink-light);margin-top:6px">30+空派产品</div>
+          </div>
+          <div style="background:rgba(122,58,138,0.08);border:1px solid rgba(122,58,138,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--col-meitong)">卡</div>
+            <div style="font-size:10px;color:var(--ink-light);margin-top:6px">欧洲卡航体量最大</div>
+          </div>
+          <div style="background:rgba(122,58,138,0.08);border:1px solid rgba(122,58,138,0.2);padding:14px;text-align:center">
+            <div style="font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--col-meitong)">铁</div>
+            <div style="font-size:10px;color:var(--ink-light);margin-top:6px">中欧铁路</div>
+          </div>
+        </div>
+        <div class="strengths-grid">
+          <div class="strength-item">
+            <div class="strength-num">01</div>
+            <div class="strength-title">渠道广度行业第一</div>
+            <div class="strength-desc">海陆空铁100+专线，覆盖20+国家，四家竞对中最广</div>
+            <div class="strength-accent" style="background:var(--col-meitong)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">02</div>
+            <div class="strength-title">分公司网络最密</div>
+            <div class="strength-desc">国内外50家分支机构，属地化服务响应速度快</div>
+            <div class="strength-accent" style="background:var(--col-meitong)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">03</div>
+            <div class="strength-title">多平台生态最全</div>
+            <div class="strength-desc">亚马逊+Temu+美客多全覆盖，降低单平台依赖风险</div>
+            <div class="strength-accent" style="background:var(--col-meitong)"></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-num">04</div>
+            <div class="strength-title">售后维修增值</div>
+            <div class="strength-desc">退件换标+售后维修能力，差异化增值服务明显</div>
+            <div class="strength-accent" style="background:var(--col-meitong)"></div>
+          </div>
+        </div>
+        <div class="weakness-box" style="border-color:rgba(122,58,138,0.2);background:rgba(122,58,138,0.03)">
+          <div class="weakness-label" style="color:var(--col-meitong)">潜在短板</div>
+          <ul class="weakness-list">
+            <li>服务线多元化，FBA头程垂直领域专业深度不及大森林、联宇</li>
+            <li>FBA头程圈的品牌声量相比其他三家有所不及</li>
+            <li>欧洲卡航受地缘政治影响，业务稳定性存不确定性</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 第四章：对标分析 ══════════════════ -->
+<div style="background:var(--paper-warm)">
+<div class="page">
+  <div class="ch">
+    <div class="ch-num">04</div>
+    <div>
+      <div class="ch-title">多维度竞对对标分析</div>
+      <div class="ch-sub">七维度综合能力打分 · 关键数据对比</div>
+    </div>
+  </div>
+
+  <!-- 综合打分 -->
+  <div class="sh">综合竞争力评分（满分5分）</div>
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead><tr>
+        <th>评分维度</th>
+        <th style="color:#ff9a7a">大森林</th>
+        <th style="color:#7ab8e8">联宇</th>
+        <th style="color:#7aca9a">九方通逊</th>
+        <th style="color:#c49ade">美通</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>网络覆盖与基建</td><td class="best">★★★★★</td><td>★★★★</td><td>★★★★</td><td class="best">★★★★★</td></tr>
+        <tr><td>时效表现与稳定性</td><td>★★★★</td><td class="best">★★★★★</td><td class="best">★★★★★</td><td>★★★★</td></tr>
+        <tr><td>数字化与系统能力</td><td>★★★</td><td>★★★★</td><td class="best">★★★★★</td><td>★★★</td></tr>
+        <tr><td>清关与合规能力</td><td>★★★★</td><td>★★★★</td><td class="best">★★★★★</td><td>★★★★</td></tr>
+        <tr><td>成本与定价优势</td><td class="best">★★★★★</td><td>★★★</td><td>★★★</td><td>★★★★</td></tr>
+        <tr><td>海外仓与增值服务</td><td class="best">★★★★★</td><td class="best">★★★★★</td><td>★★★★</td><td>★★★★</td></tr>
+        <tr><td>B2B大货适配度</td><td class="best">★★★★★</td><td class="best">★★★★★</td><td>★★★★</td><td>★★★★</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 雷达图 -->
+  <div class="radar-section">
+    <div class="radar-canvas-wrap">
+      <canvas id="radar" width="480" height="480"></canvas>
+    </div>
+    <div class="radar-legend">
+      <div class="sh-sm">竞对定位解读</div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--col-dashaolin)"></div>
+        <div>
+          <div class="legend-name">大森林</div>
+          <div class="legend-desc">拼箱规模+成本+B2B适配，最直接竞对</div>
+          <div class="score-bar"><div class="score-fill" style="width:88%;background:var(--col-dashaolin)"></div></div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--col-lianyu)"></div>
+        <div>
+          <div class="legend-name">联宇</div>
+          <div class="legend-desc">大货专业度+时效分级+重资产强控</div>
+          <div class="score-bar"><div class="score-fill" style="width:82%;background:var(--col-lianyu)"></div></div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--col-jiufang)"></div>
+        <div>
+          <div class="legend-name">九方通逊</div>
+          <div class="legend-desc">数字化+清关合规+时效稳定，技术护城河最深</div>
+          <div class="score-bar"><div class="score-fill" style="width:86%;background:var(--col-jiufang)"></div></div>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--col-meitong)"></div>
+        <div>
+          <div class="legend-name">美通</div>
+          <div class="legend-desc">渠道广度+多式联运+平台覆盖面最广</div>
+          <div class="score-bar"><div class="score-fill" style="width:78%;background:var(--col-meitong)"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 关键对标表 -->
+  <div class="sh">时效表现与稳定性对比</div>
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead><tr><th>维度</th><th>大森林</th><th>联宇</th><th>九方通逊</th><th>美通</th></tr></thead>
+      <tbody>
+        <tr><td>美西海运时效</td><td>25–30天</td><td>普/快/特快三档</td><td class="best">港到仓12–15天</td><td>行业标准</td></tr>
+        <tr><td>时效承诺</td><td>旺季履约率98%</td><td class="best">"ONLY18"承诺</td><td class="best">全年达标率>90%</td><td>全链路可追踪</td></tr>
+        <tr><td>查验率</td><td class="best">&lt;1%（行业最低）</td><td>行业较低</td><td>合规品类专长</td><td>自有团队响应快</td></tr>
+        <tr><td>特殊保障</td><td>48小时拆柜派送</td><td>三级分级产品</td><td class="best">FIST Elite优先锁仓</td><td>自有清关降延误</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sh">数字化与系统能力对比</div>
+  <div class="comp-table-wrap">
+    <table class="comp-table">
+      <thead><tr><th>维度</th><th>大森林</th><th>联宇</th><th>九方通逊</th><th>美通</th></tr></thead>
+      <tbody>
+        <tr><td>自研系统</td><td>DO2DO物流系统</td><td>智能管理系统</td><td class="best">全链条自研系统</td><td>信息化系统</td></tr>
+        <tr><td>研发团队</td><td>未披露</td><td>未披露</td><td class="best">40+ 人</td><td>未披露</td></tr>
+        <tr><td>专利/认证</td><td>未披露</td><td class="best">两化融合AA级</td><td class="best">42项专利</td><td>未披露</td></tr>
+        <tr><td>API对接</td><td>支持</td><td>支持</td><td class="best">全链条上下游对接</td><td>全链路可追踪</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════════════ 第五章：战略控制点 ══════════════════ -->
+<div class="page">
+  <div class="ch">
+    <div class="ch-num">05</div>
+    <div>
+      <div class="ch-title">竞对战略控制点识别</div>
+      <div class="ch-sub">护城河层级解构 · 壁垒深度评级</div>
+    </div>
+  </div>
+
+  <div class="moat-grid">
+    <div class="moat-card">
+      <div class="moat-company" style="color:var(--col-dashaolin)">大森林 / 规模效应 × 全链路基建</div>
+      <div class="moat-title">成本与网络密度的规模护城河</div>
+      <div class="moat-level">
+        <div class="moat-level-label">初级壁垒（1-2年）</div>
+        <div class="moat-level-text">FBA拼箱市占率第一的规模效应，带来低于市场5-10%的成本优势和24个国内分拨中心的全网覆盖</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">中级壁垒（3-5年）</div>
+        <div class="moat-level-text">17个海外仓+105万sqft仓配网络+自营卡车队，形成"到港-拆柜-入仓"72小时闭环</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">独特壁垒</div>
+        <div class="moat-level-text">超大件8吨/8米+加难约仓批约通过率85%，B2B大货细分场景差异化优势</div>
+      </div>
+      <div class="moat-rating" style="color:var(--col-dashaolin);border:1px solid rgba(200,64,26,0.3)">护城河评级：★★★★ 较强</div>
+    </div>
+
+    <div class="moat-card">
+      <div class="moat-company" style="color:var(--col-lianyu)">联宇 / 重资产强控 × 时效分级</div>
+      <div class="moat-title">全链路可控性与时效产品差异化</div>
+      <div class="moat-level">
+        <div class="moat-level-label">初级壁垒（1-2年）</div>
+        <div class="moat-level-text">三级时效分级产品精准匹配差异需求，"ONLY18"承诺建立品牌辨识度</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">中级壁垒（3-5年）</div>
+        <div class="moat-level-text">自有车队+自动化分拣+60万sqft海外仓，关键节点强控，时效确定性高</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">独特壁垒</div>
+        <div class="moat-level-text">行业首家"4S"资质+沃尔玛/Wayfair多平台认证，"认证护城河"</div>
+      </div>
+      <div class="moat-rating" style="color:var(--col-lianyu);border:1px solid rgba(26,92,138,0.3)">护城河评级：★★★★ 较强</div>
+    </div>
+
+    <div class="moat-card">
+      <div class="moat-company" style="color:var(--col-jiufang)">九方通逊 / 数字化 × 合规 × 时效稳定</div>
+      <div class="moat-title">技术研发×清关专业×最高级认证三维叠加</div>
+      <div class="moat-level">
+        <div class="moat-level-label">初级壁垒（1-2年）</div>
+        <div class="moat-level-text">42项专利+自研全链条系统，全链条上下游API对接，信息流闭环降低人工干预成本</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">中级壁垒（3-5年）</div>
+        <div class="moat-level-text">欧美300+清关团队在高合规品类中的"人+流程"壁垒，短时间难以通过资本投入复制</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">高级壁垒</div>
+        <div class="moat-level-text">FIST Elite最高认证+"先查后装"试点仅两家获批，品牌信任度和行业话语权</div>
+      </div>
+      <div class="moat-rating" style="color:var(--col-jiufang);border:1px solid rgba(42,122,74,0.3)">护城河评级：★★★★★ 强</div>
+    </div>
+
+    <div class="moat-card">
+      <div class="moat-company" style="color:var(--col-meitong)">美通 / 渠道广度 × 多式联运 × 多平台</div>
+      <div class="moat-title">网络广度与多平台一站式入口效应</div>
+      <div class="moat-level">
+        <div class="moat-level-label">初级壁垒（1-2年）</div>
+        <div class="moat-level-text">国内30+海外20家分公司+80+自营线路网络密度，属地化服务响应速度快</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">中级壁垒（3-5年）</div>
+        <div class="moat-level-text">欧洲卡航市场体量最大的规模优势，在特定路向形成不可替代性</div>
+      </div>
+      <div class="moat-level" style="margin-top:12px">
+        <div class="moat-level-label">独特壁垒</div>
+        <div class="moat-level-text">亚马逊+Temu+美客多三大平台全覆盖，"多平台履约一站式入口"效应</div>
+      </div>
+      <div class="moat-rating" style="color:var(--col-meitong);border:1px solid rgba(122,58,138,0.3)">护城河评级：★★★★ 较强</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 第六章：策略启示 ══════════════════ -->
+<div style="background:var(--ink);color:var(--paper)">
+<div class="page">
+  <div class="ch" style="border-bottom-color:rgba(245,242,237,0.1)">
+    <div class="ch-num" style="color:var(--accent)">06</div>
+    <div>
+      <div class="ch-title" style="color:var(--paper)">竞争策略启示与建议</div>
+      <div class="ch-sub">4D能力模型 · 四大差异化方向 · 战略控制点路线图</div>
+    </div>
+  </div>
+
+  <!-- 4D模型 -->
+  <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;color:rgba(245,242,237,.4);text-transform:uppercase;margin-bottom:16px">B2B大货赛道制胜要素 — 4D能力模型</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);margin-bottom:52px">
+    <div style="background:rgba(245,242,237,.03);padding:28px 22px;text-align:center">
+      <div style="font-family:'Noto Serif SC',serif;font-size:44px;font-weight:700;color:var(--accent);line-height:1;margin-bottom:10px">D</div>
+      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.15em;color:rgba(245,242,237,.3);text-transform:uppercase;margin-bottom:10px">Depth</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:14px;font-weight:600;color:var(--paper);margin-bottom:8px">深度</div>
+      <div style="font-size:12px;color:rgba(245,242,237,.5);font-weight:300;line-height:1.6">全链条关键节点的自营掌控力</div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-family:'Space Mono',monospace;font-size:9px;color:rgba(245,242,237,.25);line-height:1.6">自有仓库/车队/清关团队比例</div>
+    </div>
+    <div style="background:rgba(245,242,237,.03);padding:28px 22px;text-align:center">
+      <div style="font-family:'Noto Serif SC',serif;font-size:44px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:10px">D</div>
+      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.15em;color:rgba(245,242,237,.3);text-transform:uppercase;margin-bottom:10px">Digital</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:14px;font-weight:600;color:var(--paper);margin-bottom:8px">数字化</div>
+      <div style="font-size:12px;color:rgba(245,242,237,.5);font-weight:300;line-height:1.6">全链路可视化+数据智能+API</div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-family:'Space Mono',monospace;font-size:9px;color:rgba(245,242,237,.25);line-height:1.6">系统自研率/API覆盖率</div>
+    </div>
+    <div style="background:rgba(245,242,237,.03);padding:28px 22px;text-align:center">
+      <div style="font-family:'Noto Serif SC',serif;font-size:44px;font-weight:700;color:var(--col-jiufang);line-height:1;margin-bottom:10px">D</div>
+      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.15em;color:rgba(245,242,237,.3);text-transform:uppercase;margin-bottom:10px">Diversification</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:14px;font-weight:600;color:var(--paper);margin-bottom:8px">多元化</div>
+      <div style="font-size:12px;color:rgba(245,242,237,.5);font-weight:300;line-height:1.6">多平台×多运输方式×多增值</div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-family:'Space Mono',monospace;font-size:9px;color:rgba(245,242,237,.25);line-height:1.6">平台认证数/运输方式/服务SKU</div>
+    </div>
+    <div style="background:rgba(245,242,237,.03);padding:28px 22px;text-align:center">
+      <div style="font-family:'Noto Serif SC',serif;font-size:44px;font-weight:700;color:var(--col-lianyu);line-height:1;margin-bottom:10px">D</div>
+      <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.15em;color:rgba(245,242,237,.3);text-transform:uppercase;margin-bottom:10px">Delivery</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:14px;font-weight:600;color:var(--paper);margin-bottom:8px">交付确定性</div>
+      <div style="font-size:12px;color:rgba(245,242,237,.5);font-weight:300;line-height:1.6">时效稳定+旺季履约+查验可控</div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-family:'Space Mono',monospace;font-size:9px;color:rgba(245,242,237,.25);line-height:1.6">时效达标率/旺季履约率/查验率</div>
+    </div>
+  </div>
+
+  <!-- 四大差异化方向 -->
+  <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;color:rgba(245,242,237,.4);text-transform:uppercase;margin-bottom:16px">四大差异化竞争策略方向</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:52px">
+    <div style="border:1px solid rgba(255,255,255,.1);padding:24px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--col-dashaolin)"></div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(245,242,237,.3);margin-bottom:12px">方向01</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--paper);margin-bottom:10px;line-height:1.4">构建"大货全场景"领先优势</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300;line-height:1.7">从FBA头程延伸至传统B2B贸易物流、海外仓大货配送、大件逆向物流，形成"大货物流全场景服务"能力。</div>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.1);padding:24px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--col-jiufang)"></div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(245,242,237,.3);margin-bottom:12px">方向02</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--paper);margin-bottom:10px;line-height:1.4">数字化中台驱动"确定性交付"</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300;line-height:1.7">构建"智能路由+时效预测+风险预警"的AI能力，将确定性时效承诺从产品标签升级为平台级能力。</div>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.1);padding:24px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--col-meitong)"></div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(245,242,237,.3);margin-bottom:12px">方向03</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--paper);margin-bottom:10px;line-height:1.4">打造"多平台履约枢纽"</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300;line-height:1.7">面向亚马逊+沃尔玛+Temu+TikTok Shop+独立站建立标准化履约中台，一套库存对应多平台发货。</div>
+    </div>
+    <div style="border:1px solid rgba(255,255,255,.1);padding:24px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--col-lianyu)"></div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(245,242,237,.3);margin-bottom:12px">方向04</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;color:var(--paper);margin-bottom:10px;line-height:1.4">深耕目的国"最后一公里"</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300;line-height:1.7">抓住亚马逊取消预处理的窗口期，建立集仓储+预处理+维修+本地配送于一体的"本土化履约中心"。</div>
+    </div>
+  </div>
+
+  <!-- 战略控制点路线图 -->
+  <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;color:rgba(245,242,237,.4);text-transform:uppercase;margin-bottom:16px">战略控制点分层构建路线图</div>
+  <div style="border:1px solid rgba(255,255,255,.1)">
+    <div style="display:grid;grid-template-columns:80px 140px 1fr 100px;gap:16px;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.04)">
+      <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:rgba(245,242,237,.3)">层级</div>
+      <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:rgba(245,242,237,.3)">壁垒类型</div>
+      <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:rgba(245,242,237,.3)">建议方向</div>
+      <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:rgba(245,242,237,.3);text-align:right">周期</div>
+    </div>
+    <div style="display:grid;grid-template-columns:80px 140px 1fr 100px;gap:16px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.06)">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(200,64,26,.8)">初级</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:13px;color:var(--paper)">效率/成本</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300">大货规模化采购+多点位分拨降本，快速建立价格竞争力</div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.3);text-align:right">1–2年</div>
+    </div>
+    <div style="display:grid;grid-template-columns:80px 140px 1fr 100px;gap:16px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.06)">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--gold)">中级</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:13px;color:var(--paper)">客户粘性</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300">多平台履约中台+API深度绑定，提高卖家切换成本</div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.3);text-align:right">2–3年</div>
+    </div>
+    <div style="display:grid;grid-template-columns:80px 140px 1fr 100px;gap:16px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.06)">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--col-jiufang)">高级</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:13px;color:var(--paper)">技术/标准</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300">AI驱动时效预测+智能路由系统，形成技术护城河</div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.3);text-align:right">3–5年</div>
+    </div>
+    <div style="display:grid;grid-template-columns:80px 140px 1fr 100px;gap:16px;padding:16px 20px">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--col-lianyu)">顶级</div>
+      <div style="font-family:'Noto Serif SC',serif;font-size:13px;color:var(--paper)">生态/平台</div>
+      <div style="font-size:13px;color:rgba(245,242,237,.55);font-weight:300">B2B大货物流履约标准制定，建立行业话语权</div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.3);text-align:right">5年+</div>
+    </div>
+  </div>
+
+  <!-- 免责声明 -->
+  <div style="border:1px solid rgba(255,255,255,.08);padding:20px 24px;margin-top:52px">
+    <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;color:rgba(245,242,237,.25);text-transform:uppercase;margin-bottom:8px">免责声明</div>
+    <div style="font-size:12px;color:rgba(245,242,237,.3);font-weight:300;line-height:1.7">本报告基于公开信息整理分析，部分竞对未公开的运营数据（如营收、利润率、市场份额等）未能获取，相关分析可能存在信息不完整的情况。报告中的评分和分析结论仅供参考，不构成商业决策的唯一依据。</div>
+  </div>
+
+  <div style="margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center">
+    <span style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.2);letter-spacing:.08em">B2B CROSS-BORDER LOGISTICS · COMPETITIVE INTELLIGENCE</span>
+    <span style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(245,242,237,.2);letter-spacing:.08em">2026.06 · INTERNAL USE ONLY</span>
+  </div>
+</div>
+</div>
+
+<script>
+// ── Radar Chart ──
+const canvas = document.getElementById('radar');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  const cx = 240, cy = 240, R = 180;
+  const labels = ['网络覆盖', '时效稳定', '数字化', '清关合规', '成本优势', '海外仓服务', 'B2B适配'];
+  const n = labels.length;
+  const scores = {
+    dashaolin: [5, 4, 3, 4, 5, 5, 5],
+    lianyu:    [4, 5, 4, 4, 3, 5, 5],
+    jiufang:   [4, 5, 5, 5, 3, 4, 4],
+    meitong:   [5, 4, 3, 4, 4, 4, 4],
+  };
+  const colors = {
+    dashaolin: 'rgba(200,64,26,',
+    lianyu:    'rgba(26,92,138,',
+    jiufang:   'rgba(42,122,74,',
+    meitong:   'rgba(122,58,138,',
+  };
+
+  function angle(i) { return (Math.PI * 2 * i / n) - Math.PI / 2; }
+  function point(i, val) {
+    const a = angle(i);
+    const r = (val / 5) * R;
+    return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
+  }
+
+  // background
+  ctx.fillStyle = '#f5f2ed';
+  ctx.fillRect(0, 0, 480, 480);
+
+  // grid rings
+  [1,2,3,4,5].forEach(ring => {
+    ctx.beginPath();
+    for (let i = 0; i < n; i++) {
+      const a = angle(i), r = (ring/5)*R;
+      const x = cx + r*Math.cos(a), y = cy + r*Math.sin(a);
+      i === 0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = ring === 5 ? '#d4cfc7' : '#e8e4de';
+    ctx.lineWidth = ring === 5 ? 1.5 : 0.75;
+    ctx.stroke();
+  });
+
+  // axes
+  ctx.strokeStyle = '#d4cfc7';
+  ctx.lineWidth = 0.75;
+  for (let i = 0; i < n; i++) {
+    const a = angle(i);
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + R*Math.cos(a), cy + R*Math.sin(a));
+    ctx.stroke();
+  }
+
+  // data polygons
+  Object.entries(scores).forEach(([key, vals]) => {
+    ctx.beginPath();
+    vals.forEach((v, i) => {
+      const p = point(i, v);
+      i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y);
+    });
+    ctx.closePath();
+    ctx.fillStyle = colors[key] + '0.12)';
+    ctx.fill();
+    ctx.strokeStyle = colors[key] + '0.75)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // dots
+    vals.forEach((v, i) => {
+      const p = point(i, v);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 3, 0, Math.PI*2);
+      ctx.fillStyle = colors[key] + '1)';
+      ctx.fill();
+    });
+  });
+
+  // labels
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  labels.forEach((lbl, i) => {
+    const a = angle(i);
+    const r = R + 26;
+    const x = cx + r*Math.cos(a), y = cy + r*Math.sin(a);
+    ctx.fillStyle = '#3a3a3a';
+    ctx.font = '500 12px "Noto Serif SC", serif';
+    ctx.fillText(lbl, x, y);
+  });
+}
+</script>
+</body>
+</html>
